@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresh&amp;Clean 021 · Dubinsko pranje u Novom Sadu</title>
+<meta name="description" content="Dubinsko pranje nameštaja, tepiha, dušeka i auto enterijera u Novom Sadu. Karcher, ANNO i MAFRA sredstva, bezbedna za decu i ljubimce. 062 853 21 26">
+<meta name="theme-color" content="#0d2f45">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="Fresh&amp;Clean 021 · Dubinsko pranje u Novom Sadu">
+<meta property="og:description" content="Peremo nameštaj, tepihe, dušeke i auto enterijer na vašoj adresi u Novom Sadu. Pozovite 062 853 21 26.">
+<meta property="og:image" content="assets/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Fresh&Clean 021","description":"Dubinsko pranje nameštaja, tepiha, dušeka i auto enterijera","telephone":"+381628532126","email":"fresh.clean021@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Branka Radičevića 1","addressLocality":"Novi Sad","addressCountry":"RS"},"areaServed":"Novi Sad"}</script>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/support.js"></script>
+</head>
+<body>
+<noscript><div style="padding:24px;font-family:sans-serif">Fresh&amp;Clean 021 · Dubinsko pranje Novi Sad · <a href="tel:+381628532126">062 853 21 26</a> · fresh.clean021@gmail.com · Branka Radičevića 1, Novi Sad</div></noscript>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Fresh&amp;Clean 021 · Dubinsko pranje u Novom Sadu</title>
+<meta name="description" content="Dubinsko pranje nameštaja, tepiha, dušeka i auto enterijera u Novom Sadu. Karcher, ANNO i MAFRA sredstva, bezbedna za decu i ljubimce. 062 853 21 26">
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#2b7fb0"/><circle cx="44" cy="54" r="20" fill="#c4e5f8"/><circle cx="64" cy="36" r="10" fill="#ffffff"/></svg></template>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f5fafd;color:#0d2f45;font-family:'Open Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#1a6f9e}
+a:hover{color:#0f5480}
+button,input{font-family:inherit}
+@keyframes sjFloat{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(var(--dx),var(--dy),0) scale(1.06)}100%{transform:translate3d(0,0,0) scale(1)}}
+@keyframes sjFoam{0%{transform:translate3d(0,40px,0) scale(.3);opacity:0}20%{opacity:1}50%{transform:translate3d(var(--sx),var(--ty),0) scale(1.1);opacity:1}100%{transform:translate3d(var(--sx2),var(--ty2),0) scale(1.25);opacity:0}}
+@keyframes sjVeil{0%{opacity:0}38%{opacity:.92}62%{opacity:.92}100%{opacity:0}}
+@keyframes sjRise{0%{transform:translateY(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-110vh);opacity:0}}
+</style>
+</helmet>
+<div style="min-height:100vh;background:#f5fafd;font-size:16px;line-height:1.6;overflow-x:hidden">
+{{ scrollBubbles }}
+{{ pageBurstEl }}
+
+<header style="position:fixed;top:16px;left:0;right:0;z-index:40;padding:0 20px">
+  <div style="max-width:1240px;margin:0 auto;padding:{{ hdrPad }};display:flex;align-items:center;justify-content:space-between;gap:{{ hdrGap }};flex-wrap:{{ hdrWrap }};background:rgba(255,255,255,0.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,0.8);border-radius:999px;box-shadow:0 10px 40px -14px rgba(13,47,69,0.3)">
+    <a href="#/" style="display:flex;align-items:center;gap:10px;color:#0d2f45;text-decoration:none">
+      <img src="assets/fc-mark-sky2.png" alt="" style="height:{{ markH }};width:auto;display:block">
+      <span style="display:flex;flex-direction:column;line-height:1.1;white-space:nowrap">
+        <span style="font-family:'Open Sans',sans-serif;font-weight:700;font-size:{{ logoFs }};letter-spacing:0.06em">FRESH&amp;CLEAN 021</span>
+        <span style="font-family:'Open Sans',sans-serif;font-weight:700;font-size:{{ logoSubFs }};letter-spacing:0.08em;color:#1a6f9e">DUBINSKO PRANJE NOVI SAD</span>
+      </span>
+    </a>
+    <sc-if value="{{ desk }}" hint-placeholder-val="{{ true }}">
+    <nav style="display:flex;gap:4px;flex-wrap:wrap;font-size:15px">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+        <a href="{{ n.href }}" style="color:{{ n.color }};background:{{ n.bg }};text-decoration:none;padding:8px 14px;border-radius:999px;font-weight:500" style-hover="background:#e6f4fc">{{ n.label }}</a>
+      </sc-for>
+    </nav>
+    <a href="{{ ctaHref }}" style="background:#8fd0f5;color:#06304a;padding:12px 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;box-shadow:0 8px 20px -8px rgba(60,150,210,0.7)" style-hover="background:#6fc0ee">{{ ctaLabel }} · 062 853 21 26</a>
+    </sc-if>
+    <sc-if value="{{ mob }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;gap:8px;align-items:center">
+        <button type="button" onClick="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuExp }}" style="flex:none;width:46px;height:46px;border-radius:50%;border:0;background:#8fd0f5;color:#06304a;font-size:22px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center">{{ menuIcon }}</button>
+      </div>
+    </sc-if>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav style="max-width:1240px;margin:8px auto 0;padding:10px;display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,0.96);backdrop-filter:blur(18px);border-radius:28px;box-shadow:0 20px 40px -16px rgba(13,47,69,0.35)">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+        <a href="{{ n.href }}" onClick="{{ closeMenu }}" style="color:{{ n.color }};background:{{ n.bg }};text-decoration:none;padding:14px 18px;border-radius:18px;font-size:17px;font-weight:600">{{ n.label }}</a>
+      </sc-for>
+    </nav>
+  </sc-if>
+</header>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <section data-screen-label="Početna hero" style="position:relative;min-height:max(680px,100vh);display:flex;align-items:flex-end;overflow:hidden;background:#0d2f45">
+    <picture><source media="(max-width: 599px)" sc-camel-src-set="assets/hero-fc-mob.jpg"><img src="assets/hero-fc.jpg" alt="Dubinsko pranje tepiha mašinom za ekstrakciju" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ heroImgPos }}"></picture>
+    <div style="position:absolute;inset:0;background:{{ heroOv1 }}"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,30,50,0.55) 0%,transparent 40%)"></div>
+    {{ heroBubbles }}
+    <div style="position:relative;max-width:1240px;width:100%;margin:0 auto;padding:{{ heroPad }};display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:28px;color:#fff">
+        <span style="display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(10px);font-size:14px;font-weight:500;white-space:nowrap">
+          <img src="assets/fc-mark-white2.png" alt="" style="height:20px;width:auto;margin-left:6px">
+          Uklanjanje svih nečistoća.
+        </span>
+        <h1 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(38px,6.6vw,92px);line-height:0.98;letter-spacing:-0.025em;text-wrap:balance">Dubinsko pranje<br>u <span style="color:#a8dcf7">Novom Sadu.</span></h1>
+        <p style="margin:0;font-size:19px;line-height:1.55;max-width:460px;color:#d8ecf8">Peremo nameštaj, tepihe, dušeke i auto enterijer, dolaskom na vašu adresu. Radimo Karcher mašinama i sredstvima bezbednim za decu i ljubimce.</p>
+        <div style="display:{{ heroBtnDisplay }};grid-template-columns:1fr 1fr;flex-wrap:wrap;gap:10px;margin-top:{{ heroBtnTop }}">
+          <a href="tel:+381628532126" style="grid-column:1 / -1;text-align:center;background:#fff;color:#0d2f45;padding:17px 30px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none" style-hover="background:#e6f4fc">Pozovite nas</a>
+          <a href="https://wa.me/381628532126" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.45);color:#fff;padding:17px 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;backdrop-filter:blur(8px);text-align:center" style-hover="background:rgba(255,255,255,0.24)">WhatsApp</a>
+          <a href="viber://chat?number=%2B381628532126" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.45);color:#fff;padding:17px 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;backdrop-filter:blur(8px);text-align:center" style-hover="background:rgba(255,255,255,0.24)">Viber</a>
+        </div>
+      </div>
+      <div style="display:{{ heroCardDisp }};justify-content:flex-end">
+        <div style="display:flex;flex-direction:column;gap:16px;padding:24px;border-radius:28px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);color:#fff;min-width:min(100%,300px)">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="font-family:'Open Sans',sans-serif;font-size:40px;font-weight:600;letter-spacing:-0.03em;line-height:1">2500+</span>
+            <span style="display:flex;flex-direction:column;font-size:14px;line-height:1.35;color:#d8ecf8">završenih<br>čišćenja</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <span style="padding:12px 14px;border-radius:16px;background:rgba(255,255,255,0.14);font-size:14px;line-height:1.3"><strong style="display:block;font-family:'Open Sans',sans-serif;font-size:20px">850+</strong>zadovoljnih mušterija</span>
+            <span style="padding:12px 14px;border-radius:16px;background:rgba(255,255,255,0.14);font-size:14px;line-height:1.3"><strong style="display:block;font-family:'Open Sans',sans-serif;font-size:20px">Eko</strong>sertifikovana sredstva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;max-width:1240px;margin:0 auto;padding:110px 32px 0;display:flex;flex-direction:column;gap:44px">
+    <div style="display:flex;justify-content:center;text-align:center">
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+        <span style="font-size:14px;font-weight:600;color:#1a6f9e">Usluge</span>
+        <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(36px,4.6vw,58px);line-height:1.02;letter-spacing:-0.02em">Šta peremo</h2>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+      <sc-for list="{{ topServices }}" as="s" hint-placeholder-count="3">
+        <a href="#/usluge" style="display:flex;flex-direction:column;gap:14px;padding:10px 10px 20px;background:#fff;border-radius:28px;color:#0d2f45;text-decoration:none;box-shadow:0 1px 0 rgba(13,47,69,0.04),0 18px 40px -24px rgba(60,150,210,0.35);transition:transform .25s" style-hover="transform:translateY(-4px)">
+          <div style="position:relative;aspect-ratio:5/4;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#e6f4fc,#cfe7f5)"><sc-if value="{{ s.img }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ s.name }}" style="position:absolute;inset:0;background-image:{{ s.bg }};background-size:cover;background-position:center"></div></sc-if></div>
+          <div style="display:flex;flex-direction:column;gap:4px;padding:0 10px">
+            <span style="font-family:'Open Sans',sans-serif;font-size:19px;font-weight:600;letter-spacing:-0.02em">{{ s.name }}</span>
+            <span style="font-size:14px;color:#1a6f9e;font-weight:500">{{ s.price }}</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+    <a href="#/usluge" style="align-self:center;display:inline-flex;align-items:center;gap:10px;background:#8fd0f5;color:#06304a;padding:16px 28px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;box-shadow:0 10px 24px -10px rgba(60,150,210,0.7)" style-hover="background:#6fc0ee">Pogledaj sve usluge →</a>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:110px 32px 0">
+    <div style="position:relative;border-radius:40px;overflow:hidden;background:linear-gradient(135deg,#e7f4fc 0%,#d3eaf8 100%);padding:{{ baPad }};display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:48px;align-items:center">
+      {{ softBubbles }}
+      <div style="position:relative;display:flex;flex-direction:column;gap:18px;grid-column:1/-1">
+        <span style="font-size:14px;font-weight:600;color:#1a6f9e">Pre / posle</span>
+        <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(26px,4vw,50px);line-height:1.04;letter-spacing:-0.02em;white-space:nowrap">Pogledajte rezultate</h2>
+        <div style="display:flex;gap:8px;flex-wrap:nowrap">
+          <sc-for list="{{ baTabs }}" as="b" hint-placeholder-count="3">
+            <button onClick="{{ b.pick }}" style="flex:{{ tabFlex }};white-space:nowrap;padding:{{ tabPad }};border-radius:999px;border:0;background:{{ b.bg }};color:{{ b.fg }};font-size:14px;font-weight:600;cursor:pointer">{{ b.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="position:relative;display:flex;flex-direction:column;gap:16px;grid-column:1/-1">
+        <div ref="{{ baRef }}" style="position:relative;aspect-ratio:16/10;border-radius:28px;overflow:hidden;background:#cfe7f5;box-shadow:0 30px 60px -30px rgba(13,47,69,0.45)">
+          <div style="position:absolute;inset:0"><sc-if value="{{ baHasImg }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="Posle čišćenja" style="position:absolute;inset:0;background-image:{{ baAfterImgBg }};background-size:cover;background-position:center"></div></sc-if><sc-if value="{{ baNoImg }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ baAfter }}" shape="rect" placeholder="POSLE, ista prostorija"></image-slot></sc-if></div>
+          <div style="position:absolute;inset:0;clip-path:inset(0 {{ baClip }}% 0 0);background:#bcdaee"><sc-if value="{{ baHasImg }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="Pre čišćenja" style="position:absolute;inset:0;background-image:{{ baBeforeImgBg }};background-size:cover;background-position:center"></div></sc-if><sc-if value="{{ baNoImg }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ baBefore }}" shape="rect" placeholder="PRE"></image-slot></sc-if></div>
+          <div style="position:absolute;top:0;bottom:0;left:{{ baPos }}%;width:3px;margin-left:-1.5px;background:#fff;pointer-events:none"></div>
+          <div style="position:absolute;top:50%;left:{{ baPos }}%;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0 20%,#d3ecfa 60%,#86c6ec 100%);box-shadow:0 8px 24px rgba(13,47,69,0.3);display:flex;align-items:center;justify-content:center;color:#0d2f45;font-weight:700;cursor:ew-resize;touch-action:none;user-select:none;z-index:2" onPointerDown="{{ baDown }}">↔</div>
+          <span style="position:absolute;top:16px;left:16px;background:rgba(13,47,69,0.75);color:#fff;font-size:12px;font-weight:600;letter-spacing:0.1em;padding:6px 12px;border-radius:999px;pointer-events:none">PRE</span>
+          <span style="position:absolute;top:16px;right:16px;background:#fff;color:#0d2f45;font-size:12px;font-weight:600;letter-spacing:0.1em;padding:6px 12px;border-radius:999px;pointer-events:none">POSLE</span>
+          {{ baBurst }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:110px 32px 0;display:flex;flex-direction:column;gap:44px">
+    <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(36px,4.6vw,58px);line-height:1.02;letter-spacing:-0.02em">Kako zakazujete</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px">
+      <sc-for list="{{ steps }}" as="st" hint-placeholder-count="3">
+        <div style="display:flex;flex-direction:column;gap:16px;padding:32px;border-radius:32px;background:#fff;box-shadow:0 18px 40px -26px rgba(60,150,210,0.35)">
+          <span style="width:60px;height:60px;margin:10px 0 0 4px;border-radius:50% 0 50% 50%;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;background:linear-gradient(225deg,#fff 0%,#c4e5f8 45%,#8fcdf2 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.7),-6px 8px 22px -8px rgba(60,150,210,0.6)"><span style="transform:rotate(45deg);margin:6px 0 0 -6px;font-family:'Open Sans',sans-serif;font-weight:700;font-size:24px;color:#0d2f45">{{ st.no }}</span></span>
+          <span style="font-family:'Open Sans',sans-serif;font-size:21px;font-weight:600;letter-spacing:-0.02em">{{ st.title }}</span>
+          <span style="font-size:16px;color:#4a6478">{{ st.desc }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:110px 32px 0;display:flex;flex-direction:column;gap:44px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="font-size:14px;font-weight:600;color:#1a6f9e">Iskustvo</span>
+      <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(36px,4.6vw,58px);line-height:1.02;letter-spacing:-0.02em">Brojke iza nas</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+    <sc-for list="{{ stats }}" as="r" hint-placeholder-count="4">
+      <div style="display:flex;flex-direction:column;gap:12px;padding:32px;border-radius:32px;background:#fff;border:1px solid #d9ecf7">
+        <span style="font-family:'Open Sans',sans-serif;font-size:52px;font-weight:600;letter-spacing:-0.02em;line-height:1;color:#1a6f9e">{{ r.n }}</span>
+        <span style="font-size:16px;color:#4a6478;text-wrap:pretty">{{ r.l }}</span>
+      </div>
+    </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:110px 32px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:36px 48px">
+    <sc-for list="{{ promises }}" as="pr" hint-placeholder-count="4">
+      <div style="display:flex;gap:16px;align-items:flex-start">
+        <span style="flex:none;width:38px;height:38px;margin:8px 4px 0;border-radius:50% 0 50% 50%;transform:rotate(-45deg);background:linear-gradient(225deg,#c4e5f8 0%,#8fd0f5 60%);display:flex;align-items:center;justify-content:center"><span style="transform:rotate(45deg);margin:4px 0 0 -4px;color:#06304a;font-weight:700">✓</span></span>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-family:'Open Sans',sans-serif;font-size:18px;font-weight:600;letter-spacing:-0.02em">{{ pr.t }}</span>
+          <span style="font-size:15px;color:#4a6478">{{ pr.d }}</span>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isInner }}" hint-placeholder-val="{{ false }}">
+  <section style="position:relative;overflow:hidden;background:linear-gradient(160deg,#0d2f45 0%,#1b5a80 60%,#2b7fb0 100%);color:#fff">
+    {{ heroBubbles }}
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:170px 32px 80px;display:flex;flex-direction:column;gap:16px">
+      <h1 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(46px,6.5vw,88px);line-height:0.98;letter-spacing:-0.025em">{{ innerTitle }}</h1>
+      <p style="margin:0;font-size:19px;color:#d8ecf8;max-width:520px">{{ innerLede }}</p>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isServices }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Usluge" style="max-width:1240px;margin:0 auto;padding:80px 32px 0;display:flex;flex-direction:column;gap:24px">
+    <sc-for list="{{ services }}" as="s" hint-placeholder-count="8">
+      <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:{{ svcGap }};align-items:center;padding:{{ svcPad }};border-radius:{{ svcRad }};background:#fff;box-shadow:0 18px 40px -28px rgba(60,150,210,0.4)">
+        <div style="position:relative;aspect-ratio:16/11;border-radius:26px;overflow:hidden;background:linear-gradient(160deg,#e6f4fc,#cfe7f5);order:{{ s.order }}"><sc-if value="{{ s.img }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ s.name }}" style="position:absolute;inset:0;background-image:{{ s.bg }};background-size:cover;background-position:center"></div></sc-if><sc-if value="{{ s.noImg }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ s.slot2 }}" shape="rect" placeholder="{{ s.ph }}"></image-slot></sc-if></div>
+        <div style="display:flex;flex-direction:column;gap:16px;padding:{{ svcInPad }};max-width:480px">
+          <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:#e6f4fc;color:#1a6f9e;font-size:13px;font-weight:600">{{ s.for }}</span>
+          <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:36px;line-height:1.05;letter-spacing:-0.035em">{{ s.name }}</h2>
+          <p style="margin:0;font-size:17px;color:#4a6478">{{ s.desc }}</p>
+          <div style="display:{{ incDisplay }};grid-template-columns:repeat(2,minmax(0,1fr));flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ s.inc }}" as="i" hint-placeholder-count="3"><span style="padding:7px 12px;border-radius:999px;background:#eef7fc;border:1px solid #d3e9f6;font-size:{{ incFs }};padding:{{ incPad }};text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ i }}</span></sc-for>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:6px">
+            <span style="font-family:'Open Sans',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.02em">{{ s.price }}</span>
+            <a href="tel:+381628532126" style="background:#8fd0f5;color:#06304a;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none" style-hover="background:#6fc0ee">Zakažite</a>
+          </div>
+        </div>
+      </article>
+    </sc-for>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isPrices }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Cenovnik" style="max-width:1240px;margin:0 auto;padding:80px 32px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:32px;align-items:stretch">
+    <div style="display:flex;flex-direction:column;padding:12px 32px;justify-content:space-between;border-radius:32px;background:#fff;box-shadow:0 18px 40px -28px rgba(60,150,210,0.4)">
+      <sc-for list="{{ priceRows }}" as="p" hint-placeholder-count="9">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid #e7f2f9">
+          <span style="font-size:17px">{{ p.name }}</span>
+          <span style="font-family:'Open Sans',sans-serif;font-size:17px;font-weight:600;white-space:nowrap;color:#1a6f9e">{{ p.price }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <sc-if value="{{ showCalc }}" hint-placeholder-val="{{ true }}">
+    <div style="position:relative;height:100%;overflow:hidden;border-radius:32px;background:linear-gradient(160deg,#0d2f45,#2b7fb0);color:#fff;padding:{{ calcPad }};display:flex;flex-direction:column;justify-content:space-between;gap:26px">
+      {{ calcBubbles }}
+      <div style="position:relative;display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h3 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:700;font-size:30px;letter-spacing:-0.02em">Okvirna cena</h3>
+          <span style="font-size:15px;color:#cbe5f5">Izaberite šta i koliko komada perete.</span>
+        </div>
+        <button type="button" onClick="{{ calcReset }}" style="flex:none;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.35);background:transparent;color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">Poništi</button>
+      </div>
+      <div style="position:relative;display:flex;flex-direction:column;gap:18px">
+        <sc-for list="{{ calcGroups }}" as="g" hint-placeholder-count="3">
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#a8dcf7;padding-bottom:4px">{{ g.title }}</span>
+            <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="4">
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
+                <span style="display:flex;flex-direction:column;line-height:1.3;min-width:0"><span style="font-size:15px;font-weight:600">{{ it.name }}</span><span style="font-size:13px;color:#cbe5f5">{{ it.price }}</span></span>
+                <span style="flex:none;display:flex;align-items:center;gap:6px">
+                  <button type="button" onClick="{{ it.dec }}" aria-label="{{ it.decLabel }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,0.35);background:transparent;color:#fff;font-size:18px;font-weight:700;cursor:pointer;line-height:1;font-family:inherit">−</button>
+                  <span style="min-width:26px;text-align:center;font-size:16px;font-weight:700;color:{{ it.qtyFg }}">{{ it.qty }}</span>
+                  <button type="button" onClick="{{ it.inc }}" aria-label="{{ it.incLabel }}" style="width:34px;height:34px;border-radius:50%;border:0;background:#a8dcf7;color:#06304a;font-size:18px;font-weight:700;cursor:pointer;line-height:1;font-family:inherit">+</button>
+                </span>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#a8dcf7">Tepih</span>
+          <div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span style="color:#cbe5f5">400 din/m², prevoz 500 din</span><span style="font-weight:700">{{ m2 }} m²</span></div>
+          <input type="range" aria-label="Površina tepiha u m²" min="0" max="40" step="1" value="{{ m2 }}" onInput="{{ setM2 }}" onChange="{{ setM2 }}" style="width:100%;accent-color:#a8dcf7">
+        </div>
+      </div>
+      <div style="position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;padding-top:22px;border-top:1px solid rgba(255,255,255,0.2)">
+        <span style="font-family:'Open Sans',sans-serif;font-size:48px;font-weight:600;line-height:1;letter-spacing:-0.02em"><span style="font-size:18px;font-weight:500">od </span>{{ total }} <span style="font-size:18px;font-weight:500">din</span></span>
+        <a href="tel:+381628532126" style="background:#fff;color:#0d2f45;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none" style-hover="background:#e6f4fc">Zakažite termin</a>
+      </div>
+    </div>
+    </sc-if>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="O nama" style="max-width:1240px;margin:0 auto;padding:80px 32px 0;display:flex;flex-direction:column;gap:72px">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:820px;width:100%;margin:0 auto;text-align:center;align-items:center">
+      <span style="font-size:14px;font-weight:600;color:#1a6f9e">Ko smo</span>
+      <p style="margin:0;font-family:'Open Sans',sans-serif;font-size:clamp(24px,2.8vw,32px);line-height:1.35;letter-spacing:-0.015em;font-weight:600;color:#0d2f45;text-wrap:balance">Profesionalno dubinsko pranje po pristupačnim cenama, za domove i poslovne prostore u Novom Sadu.</p>
+      <p style="margin:0;font-size:18px;line-height:1.7;color:#4a6478;max-width:680px;text-wrap:pretty">Imamo dugogodišnje iskustvo i tim hemijskih inženjera koji za svaku površinu bira najbolji tretman. Radimo samo sredstvima svetskih proizvođača i specijalizovanim mašinama, a dolazimo na vašu adresu.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+      <sc-for list="{{ stats }}" as="r" hint-placeholder-count="4">
+        <div style="display:flex;flex-direction:column;gap:12px;padding:32px;border-radius:32px;background:#fff;border:1px solid #d9ecf7">
+          <span style="font-family:'Open Sans',sans-serif;font-size:48px;font-weight:700;letter-spacing:-0.02em;line-height:1;color:#1a6f9e">{{ r.n }}</span>
+          <span style="font-size:16px;color:#4a6478;text-wrap:pretty">{{ r.l }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:22px;padding:{{ brandPad }};border-radius:36px;background:linear-gradient(135deg,#eef7fc 0%,#d3eaf8 100%);text-align:center">
+      <span style="font-size:14px;font-weight:600;color:#1a6f9e">Sredstva sa kojima radimo</span>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+        <span style="padding:14px 28px;border-radius:999px;background:#fff;font-size:20px;font-weight:700;letter-spacing:0.06em;color:#0d2f45">KARCHER</span>
+        <span style="padding:14px 28px;border-radius:999px;background:#fff;font-size:20px;font-weight:700;letter-spacing:0.06em;color:#0d2f45">ANNO</span>
+        <span style="padding:14px 28px;border-radius:999px;background:#fff;font-size:20px;font-weight:700;letter-spacing:0.06em;color:#0d2f45">MAFRA</span>
+      </div>
+      <span style="font-size:16px;color:#4a6478;max-width:520px">Eko sertifikovana sredstva, bezbedna za decu i kućne ljubimce.</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:20px">
+      <sc-for list="{{ promises }}" as="pr" hint-placeholder-count="4">
+        <div style="display:flex;gap:18px;align-items:flex-start;padding:28px;border-radius:28px;background:#fff;border:1px solid #d9ecf7">
+          <span style="flex:none;width:38px;height:38px;margin:8px 4px 0;border-radius:50% 0 50% 50%;transform:rotate(-45deg);background:linear-gradient(225deg,#c4e5f8 0%,#8fd0f5 60%);display:flex;align-items:center;justify-content:center"><span style="transform:rotate(45deg);margin:4px 0 0 -4px;color:#06304a;font-weight:700">✓</span></span>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Open Sans',sans-serif;font-size:18px;font-weight:600">{{ pr.t }}</span><span style="font-size:15px;color:#4a6478">{{ pr.d }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Kontakt" style="max-width:1240px;margin:0 auto;padding:80px 32px 0;display:flex;flex-direction:column;gap:96px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:stretch">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <a href="tel:+381628532126" style="flex:1.3 1 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:{{ cardPad }};border-radius:32px;background:#8fd0f5;color:#06304a;text-decoration:none;box-shadow:0 20px 40px -20px rgba(60,150,210,0.8)" style-hover="background:#6fc0ee">
+        <span style="display:flex;flex-direction:column"><span style="font-size:14px;color:#0b3f5e">Pozovite</span><span style="font-family:'Open Sans',sans-serif;font-size:clamp(30px,3.6vw,42px);font-weight:600;letter-spacing:-0.03em;line-height:1.1">062 853 21 26</span></span><span style="font-size:28px">→</span>
+      </a>
+      <a href="https://wa.me/381628532126" style="flex:1 1 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;min-width:0;padding:{{ cardPad }};border-radius:32px;background:#fff;color:#0d2f45;text-decoration:none;border:1px solid #d9ecf7" style-hover="background:#eef7fc"><span style="display:flex;flex-direction:column"><span style="font-size:14px;color:#4a6478">Pišite nam</span><span style="font-size:{{ msgFs }};font-weight:700;line-height:1.2">WhatsApp</span></span><span style="font-size:24px">→</span></a>
+      <a href="viber://chat?number=%2B381628532126" style="flex:1 1 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;min-width:0;padding:{{ cardPad }};border-radius:32px;background:#fff;color:#0d2f45;text-decoration:none;border:1px solid #d9ecf7" style-hover="background:#eef7fc"><span style="display:flex;flex-direction:column"><span style="font-size:14px;color:#4a6478">Pošaljite slike</span><span style="font-size:{{ msgFs }};font-weight:700;line-height:1.2">Viber</span></span><span style="font-size:24px">→</span></a>
+      <div style="flex:1 1 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:14px;align-content:center;padding:{{ cardPad }};border-radius:32px;background:#eef7fc;font-size:15px;color:#0d2f45">
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:14px;color:#4a6478">Adresa</span><span style="font-weight:600">Branka Radičevića 1, Novi Sad</span></span>
+        <span style="display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:14px;color:#4a6478">Email</span><a href="mailto:fresh.clean021@gmail.com" style="font-weight:600;text-decoration:none;overflow-wrap:anywhere">fresh.clean021@gmail.com</a></span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:18px;padding:{{ formPad }};border-radius:32px;background:#fff;border:1px solid #d9ecf7;box-shadow:0 18px 40px -28px rgba(60,150,210,0.4)">
+      <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:700;font-size:28px;letter-spacing:-0.02em">Pošaljite upit</h2>
+          <span style="font-size:15px;color:#4a6478">Javićemo vam se sa cenom i slobodnim terminom.</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px">
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Ime i prezime<input type="text" name="ime" autocomplete="name" value="{{ fName }}" onInput="{{ setName }}" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400"></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Broj telefona<input type="tel" name="telefon" autocomplete="tel" value="{{ fPhone }}" onInput="{{ setPhone }}" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400"></label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Email (nije obavezno)<input type="email" name="email" autocomplete="email" value="{{ fEmail }}" onInput="{{ setEmail }}" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400"></label>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:14px;font-weight:600">Šta treba oprati?</span>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ formSvcs }}" as="o" hint-placeholder-count="6">
+              <button type="button" onClick="{{ o.toggle }}" style="padding:9px 14px;border-radius:999px;border:1px solid {{ o.bd }};background:{{ o.bg }};color:#0d2f45;font-size:14px;font-weight:600;cursor:pointer">{{ o.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Poruka<textarea name="poruka" rows="4" value="{{ fMsg }}" onInput="{{ setMsg }}" placeholder="Npr. ugaona garnitura od tkanine i tepih oko 6 m²" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400;font-family:inherit;resize:vertical"></textarea></label>
+        <sc-if value="{{ formFail }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:14px;color:#a3321f;font-weight:600">Slanje nije uspelo. Pozovite nas na <a href="tel:+381628532126" style="color:#a3321f">062 853 21 26</a> ili pišite na fresh.clean021@gmail.com.</span></sc-if>
+        <sc-if value="{{ formErr }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:14px;color:#a3321f;font-weight:600">Unesite ime i broj telefona.</span></sc-if>
+        <button type="button" onClick="{{ sendForm }}" style="padding:17px 28px;border-radius:999px;border:0;background:#8fd0f5;color:#06304a;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 10px 24px -10px rgba(60,150,210,0.7)" style-hover="background:#6fc0ee">{{ sendLabel }}</button>
+      </sc-if>
+      <sc-if value="{{ formSent }}" hint-placeholder-val="{{ false }}">
+        <div role="status" style="display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:40px 8px">
+          <span style="width:56px;height:56px;border-radius:50% 0 50% 50%;transform:rotate(-45deg);background:linear-gradient(225deg,#c4e5f8 0%,#8fd0f5 60%);display:flex;align-items:center;justify-content:center"><span style="transform:rotate(45deg);margin:6px 0 0 -6px;color:#06304a;font-weight:700;font-size:22px">✓</span></span>
+          <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:700;font-size:26px;letter-spacing:-0.02em">Hvala, {{ fName }}!</h2>
+          <span style="font-size:16px;color:#4a6478;max-width:340px">Upit je primljen. Javićemo vam se na {{ fPhone }} u najkraćem roku.</span>
+          <button type="button" onClick="{{ resetForm }}" style="margin-top:6px;padding:12px 22px;border-radius:999px;border:1px solid #bcdaee;background:#fff;color:#0d2f45;font-size:15px;font-weight:600;cursor:pointer">Pošalji novi upit</button>
+        </div>
+      </sc-if>
+    </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:32px;max-width:860px;width:100%;margin:0 auto">
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+        <span style="font-size:14px;font-weight:600;color:#1a6f9e">Pitanja</span>
+        <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(36px,4.6vw,58px);line-height:1.02;letter-spacing:-0.02em">Česta pitanja</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4">
+        <div style="border-radius:24px;background:#fff;border:1px solid #d9ecf7;padding:0 24px">
+          <button onClick="{{ f.toggle }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;text-align:left;font-family:'Open Sans',sans-serif;font-size:18px;font-weight:600;color:#0d2f45">
+            <span>{{ f.q }}</span><span style="flex:none;width:32px;height:32px;border-radius:50%;background:#e6f4fc;color:#1a6f9e;display:flex;align-items:center;justify-content:center;font-size:18px">{{ f.icon }}</span>
+          </button>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 22px;color:#4a6478">{{ f.a }}</p></sc-if>
+        </div>
+      </sc-for>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isLegal }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Pravne stranice" style="max-width:760px;margin:0 auto;padding:72px 24px 0;display:flex;flex-direction:column;gap:40px">
+    <sc-for list="{{ legal }}" as="l" hint-placeholder-count="6">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:24px;letter-spacing:-0.025em">{{ l.h }}</h2>
+        <sc-for list="{{ l.p }}" as="t" hint-placeholder-count="1"><p style="margin:0;font-size:17px;line-height:1.65;color:#334c5e;text-wrap:pretty">{{ t }}</p></sc-for>
+      </div>
+    </sc-for>
+  </section>
+</sc-if>
+
+<section style="max-width:1240px;margin:0 auto;padding:110px 32px">
+  <div style="position:relative;overflow:hidden;border-radius:44px;background:linear-gradient(135deg,#0d2f45 0%,#1b5a80 55%,#2b7fb0 100%);color:#fff;padding:{{ ctaPad }};display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap">
+    {{ ctaBubbles }}
+    <div style="position:relative;display:flex;flex-direction:column;gap:14px;max-width:560px">
+      <h2 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(36px,4.6vw,60px);line-height:1;letter-spacing:-0.025em">Treba vam termin?</h2>
+      <p style="margin:0;font-size:18px;color:#d8ecf8">Pozovite nas i dogovorite dubinsko pranje na vašoj adresi u Novom Sadu.</p>
+    </div>
+    <div style="position:relative;display:{{ heroBtnDisplay }};grid-template-columns:1fr 1fr;flex-wrap:wrap;gap:10px;width:{{ ctaBtnW }}">
+      <a href="tel:+381628532126" style="grid-column:1 / -1;text-align:center;background:#fff;color:#0d2f45;padding:17px 28px;border-radius:999px;font-weight:600;text-decoration:none" style-hover="background:#e6f4fc">062 853 21 26</a>
+      <a href="https://wa.me/381628532126" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.45);color:#fff;padding:17px 24px;border-radius:999px;font-weight:600;text-decoration:none;text-align:center" style-hover="background:rgba(255,255,255,0.24)">WhatsApp</a>
+      <a href="viber://chat?number=%2B381628532126" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.45);color:#fff;padding:17px 24px;border-radius:999px;font-weight:600;text-decoration:none;text-align:center" style-hover="background:rgba(255,255,255,0.24)">Viber</a>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative;overflow:hidden;background:#0d2f45;color:#b6d3e6;font-size:15px">
+  {{ footBubbles }}
+  <div style="position:relative;max-width:1240px;margin:0 auto;padding:80px 32px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:48px 40px">
+    <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+      <img src="assets/fc-logo-white.png" alt="Fresh&amp;Clean 021, dubinsko pranje Novi Sad" style="width:200px;height:auto;display:block">
+      <span style="max-width:260px;text-wrap:pretty">Dubinsko pranje nameštaja, tepiha, dušeka i auto enterijera u Novom Sadu.</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+      <span style="font-family:'Open Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#a8dcf7">Usluge</span>
+      <a href="#/usluge" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Pranje nameštaja</a>
+      <a href="#/usluge" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Pranje tepiha</a>
+      <a href="#/usluge" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Pranje dušeka</a>
+      <a href="#/usluge" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Auto enterijer</a>
+      <a href="#/usluge" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Mašinsko pranje podova</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+      <span style="font-family:'Open Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#a8dcf7">Firma</span>
+      <a href="#/cene" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Cenovnik</a>
+      <a href="#/o-nama" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">O nama</a>
+      <a href="#/kontakt" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Česta pitanja</a>
+      <a href="#/kontakt" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">Kontakt</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+      <span style="font-family:'Open Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#a8dcf7">Kontakt</span>
+      <a href="tel:+381628532126" style="font-family:'Open Sans',sans-serif;font-size:22px;font-weight:600;color:#fff;text-decoration:none;letter-spacing:-0.02em" style-hover="color:#a8dcf7">062 853 21 26</a>
+      <a href="mailto:fresh.clean021@gmail.com" style="color:#b6d3e6;text-decoration:none" style-hover="color:#fff">fresh.clean021@gmail.com</a>
+      <span>Branka Radičevića 1<br>Novi Sad</span>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;padding-top:4px">
+        <a href="https://wa.me/381628532126" style="padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.25);color:#fff;text-decoration:none;font-size:14px" style-hover="background:rgba(255,255,255,0.1)">WhatsApp</a>
+        <a href="viber://chat?number=%2B381628532126" style="padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.25);color:#fff;text-decoration:none;font-size:14px" style-hover="background:rgba(255,255,255,0.1)">Viber</a>
+      </div>
+    </div>
+  </div>
+  <div style="position:relative;max-width:1240px;margin:0 auto;padding:40px 32px 0">
+    <span style="display:block;font-size:14px;color:#88adc6;text-wrap:pretty">Radimo na terenu: dolazimo na vašu adresu u Novom Sadu, za domaćinstva i poslovne prostore. Sredstva: Karcher, ANNO, MAFRA.</span>
+  </div>
+  <div style="position:relative;max-width:1240px;margin:40px auto 0;padding:24px 32px 32px;border-top:1px solid rgba(255,255,255,0.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#88adc6">
+    <span>© 2026 Fresh&amp;Clean 021, Novi Sad</span>
+    <span style="display:flex;gap:20px;flex-wrap:wrap"><a href="#/uslovi" style="color:#88adc6;text-decoration:none" style-hover="color:#fff">Uslovi korišćenja</a><a href="#/privatnost" style="color:#88adc6;text-decoration:none" style-hover="color:#fff">Politika privatnosti</a><span>PIB 000000000 · MB 00000000</span></span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;cta&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;telefon&quot;,&quot;whatsapp&quot;,&quot;viber&quot;],&quot;default&quot;:&quot;telefon&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;bubbles&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showCalc&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const FORM_URL='https://formsubmit.co/ajax/fresh.clean021@gmail.com';
+const PAGE_TITLES={'':'Fresh&Clean 021 · Dubinsko pranje u Novom Sadu',usluge:'Usluge · Fresh&Clean 021',cene:'Cenovnik · Fresh&Clean 021','o-nama':'O nama · Fresh&Clean 021',kontakt:'Kontakt · Fresh&Clean 021',uslovi:'Uslovi korišćenja · Fresh&Clean 021',privatnost:'Politika privatnosti · Fresh&Clean 021'};
+const PHONE='381628532126';
+const PRICECALC=[
+ {title:'Nameštaj',items:[{id:'fot',name:'Fotelja',p:1000,od:1},{id:'dvo',name:'Dvosed',p:2000,od:1},{id:'tro',name:'Trosed',p:2500,od:1},{id:'gar',name:'Garnitura',p:3500,od:1},{id:'sto',name:'Stolica',p:500}]},
+ {title:'Dušeci',items:[{id:'dbe',name:'Dušek bebi',p:1000},{id:'dsi',name:'Dušek singl',p:1500},{id:'dbr',name:'Dušek bračni',p:2500},{id:'dob',name:'Dušek obostrano',p:800,od:1}]},
+ {title:'Ostalo',items:[{id:'kol',name:'Dečja kolica',p:1000,od:1},{id:'aut',name:'Auto enterijer',p:4000,od:1}]}];
+const TYPES=[{id:'fot',name:'Fotelja',rate:1000},{id:'dvo',name:'Dvosed',rate:2000},{id:'tro',name:'Trosed',rate:2500},{id:'gar',name:'Garnitura',rate:3500}];
+const EXTRAS=[{id:'dss',label:'Singl dušek',p:1500},{id:'dsb',label:'Bračni dušek',p:2500},{id:'sto',label:'Stolice ×4',p:2000},{id:'kol',label:'Kolica',p:1000},{id:'aut',label:'Auto',p:4000}];
+const SERVICES=[
+ {id:'nam',name:'Pranje nameštaja',for:'Domaćinstva i poslovni prostori',price:'od 1.000 din',ph:'Garnitura od tkanine',desc:'Peremo antibakterijskim sredstvima i Karcher mašinama. Uklanjamo prašinu i grinje, najčešće alergene u kući, kao i gljivice. Peremo tkaninu, kožu i eko kožu.',inc:['Ugaone garniture','Trosedi i dvosedi','Fotelje','Tabure i stolice']},
+ {id:'tep',name:'Pranje tepiha',for:'Domaćinstva i poslovni prostori',price:'400 din/m²',ph:'Tepih, detalj',desc:'Peremo tepihe svih veličina i gustina, od prirodnih i sintetičkih vlakana. Uklanjamo 97% fleka, a one najtvrdokornije peremo ručno. Prevoz je 500 dinara.',inc:['Sve veličine','Prirodna vlakna','Sintetička vlakna','Ručno pranje fleka']},
+ {id:'pod',name:'Mašinsko pranje podova',for:'Domaćinstva i poslovni prostori',price:'po dogovoru',ph:'Čist pod, detalj',desc:'Mašinski čistimo keramiku, kamen kao što su mermer i granit, drvo kao što su parket i laminat, i druge tvrde podove, na primer beton.',inc:['Keramika','Mermer i granit','Parket i laminat','Beton']},
+ {id:'aut',name:'Auto enterijer',for:'Putnička i teretna vozila',price:'od 4.000 din',ph:'Auto enterijer, sedišta',desc:'Peremo putnička vozila, autobuse, kombije i kabine kamiona, sa mašinskim sušenjem ili bez. Kožu čistimo posebnim sredstvima koja joj vraćaju sjaj i neguju je.',inc:['Sedišta i tapacir','Kožni enterijer','Čišćenje klime','Poliranje farova']},
+ {id:'dus',name:'Pranje dušeka',for:'Domaćinstva',price:'od 800 din',ph:'Dušek, detalj',desc:'Dubinski peremo dušeke na vašoj adresi i uklanjamo prašinu, grinje i fleke. Sredstva su bezbedna za decu i ljubimce.',inc:['Bebi dušek','Singl dušek','Bračni dušek','Obostrano']},
+ {id:'kol',name:'Dečja kolica i stolice',for:'Domaćinstva i lokali',price:'od 500 din',ph:'Dečja kolica',desc:'Peremo dečja kolica i stolice eko sertifikovanim sredstvima, bezbednim za decu.',inc:['Dečja kolica','Stolice','Tabure']}];
+const LEGAL={
+uslovi:[
+{h:'Ko smo',p:['Sajt dubinskopranje021.rs vodi Fresh&Clean 021 iz Novog Sada, Branka Radičevića 1, PIB 000000000, matični broj 00000000. Kad u ovim uslovima piše „mi“, misli se na tu firmu. Kad piše „vi“, misli se na svakoga ko koristi sajt ili zakaže uslugu.']},
+{h:'Zakazivanje',p:['Termin se smatra zakazanim kad ga potvrdimo telefonom ili porukom. Upit poslat preko sajta, WhatsApp-a ili Vibera još nije potvrđen termin.','Ako se dogovor promeni, na primer prostor je veći nego što ste rekli ili treba uraditi nešto što nije dogovoreno, javićemo vam novu cenu pre nego što nastavimo.']},
+{h:'Cene',p:['Cene na sajtu su početne. Kalkulator daje procenu, a važi cena koju dogovorimo pre dolaska.','Za pranje tepiha prevoz se naplaćuje 500 dinara. Za adrese van Novog Sada prevoz naplaćujemo po dogovoru.']},
+{h:'Otkazivanje',p:['Termin možete otkazati ili pomeriti bez troška najkasnije 24 sata unapred. Ako otkažete kasnije, ili ekipa dođe a ne može da uđe u prostor, izlazak naplaćujemo po dogovoru.']},
+{h:'Plaćanje',p:['Fizička lica plaćaju gotovinom ili karticom kad završimo posao. Pravnim licima i stambenim zajednicama izdajemo fakturu sa rokom plaćanja od 15 dana, osim ako ugovorom nije drugačije dogovoreno.']},
+{h:'Reklamacije',p:['Ako nešto nije urađeno kako je dogovoreno, javite nam se u roku od 24 sata od završetka posla. Dolazimo ponovo i ispravljamo propust bez naplate.','Reklamaciju možete poslati i na fresh.clean021@gmail.com. Odgovaramo u roku od 8 dana, kako propisuje Zakon o zaštiti potrošača.']},
+{h:'Šteta',p:['Naši saradnici su osigurani. Ako tokom rada nešto oštetimo, prijavite to odmah ili najkasnije u roku od 24 sata, uz fotografiju ako je moguće. Štetu nadoknađujemo preko osiguranja ili direktno.','Ne odgovaramo za oštećenja koja su postojala pre našeg dolaska, za predmete od posebne vrednosti o kojima nismo bili obavešteni, ni za površine koje se ošteti kad se čiste na uobičajen način zbog lošeg materijala ili ugradnje.']},
+{h:'Ključevi i pristup',p:['Ako nam ostavite ključ, čuvamo ga samo dok traje posao i vraćamo ga na način koji dogovorimo. Kopije ne pravimo.']},
+{h:'Sadržaj sajta',p:['Tekstovi i fotografije na sajtu pripadaju firmi Fresh&Clean 021. Ne smeju se koristiti u komercijalne svrhe bez naše dozvole.']},
+{h:'Izmene i sporovi',p:['Ove uslove možemo menjati. Nova verzija važi od dana kad je objavimo na sajtu, a za već zakazane termine važe uslovi od dana zakazivanja.','Na ove uslove primenjuje se pravo Republike Srbije. Ako se ne dogovorimo, nadležan je sud u Novom Sadu.']}],
+privatnost:[
+{h:'Ko obrađuje podatke',p:['Rukovalac podacima je Fresh&Clean 021, Branka Radičevića 1, Novi Sad, PIB 000000000. Za sva pitanja o podacima pišite na fresh.clean021@gmail.com.']},
+{h:'Koje podatke prikupljamo',p:['Kad zakazujete uslugu, uzimamo ime, broj telefona, adresu prostora i ono što nam sami kažete o prostoru, na primer kvadraturu ili da imate kućne ljubimce. Za pravna lica uzimamo i podatke potrebne za fakturu.','Ako nam pošaljete fotografije prostora preko Vibera ili WhatsApp-a, koristimo ih samo da procenimo posao.']},
+{h:'Zašto ih koristimo',p:['Podatke koristimo da zakažemo i obavimo uslugu, izdamo račun i rešimo eventualnu reklamaciju. Ne šaljemo reklamne poruke osim ako to sami ne tražite.','Pravni osnov je izvršenje ugovora o usluzi i naše zakonske obaveze, pre svega u računovodstvu.']},
+{h:'Koliko ih čuvamo',p:['Podatke o klijentima čuvamo dok sarađujemo i još dve godine posle poslednje usluge, zbog eventualnih reklamacija. Računi i fakture se čuvaju onoliko koliko propisuje zakon o računovodstvu.','Fotografije prostora brišemo kad završimo posao.']},
+{h:'Ko ih još vidi',p:['Podaci su dostupni samo zaposlenima kojima su potrebni za posao, i našem knjigovođi. Ne prodajemo ih i ne dajemo drugim firmama.','Kad nam pišete preko WhatsApp-a ili Vibera, te aplikacije obrađuju poruke po svojim pravilima.']},
+{h:'Kolačići',p:['Sajt koristi samo kolačiće koji su potrebni da radi. Ne koristimo kolačiće za praćenje ni oglašavanje.']},
+{h:'Vaša prava',p:['Možete tražiti da vidite koje podatke o vama imamo, da ih ispravimo ili obrišemo, i da prestanemo da ih obrađujemo. Zahtev pošaljite na fresh.clean021@gmail.com i odgovorićemo u roku od 30 dana.','Ako mislite da smo pogrešno postupili sa vašim podacima, možete se obratiti Povereniku za informacije od javnog značaja i zaštitu podataka o ličnosti.']},
+{h:'Izmene',p:['Ako promenimo ovu politiku, novu verziju objavljujemo na ovoj stranici, sa datumom od kad važi.']}]};
+const SVCIMG={nam:'assets/svc-namestaj.jpg',tep:'assets/svc-tepih.jpg',pod:'assets/svc-podovi.jpg',aut:'assets/svc-auto.jpg',dus:'assets/svc-dusek.jpg',kol:'assets/svc-kolica.jpg'};
+const BAIMG={gar:['assets/ba-garnitura-pre.jpg','assets/ba-garnitura-posle.jpg'],tep:['assets/ba-tepih-pre.jpg','assets/ba-tepih-posle.jpg'],aut:['assets/ba-auto-pre.jpg','assets/ba-auto-posle.jpg']};
+const BA=[{id:'gar',label:'Garnitura'},{id:'tep',label:'Tepih'},{id:'aut',label:'Auto'}];
+const fmt=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+const PAGES=[['','Početna'],['usluge','Usluge'],['cene','Cenovnik'],['o-nama','O nama'],['kontakt','Kontakt']];
+const INNER={usluge:['Usluge','Peremo na vašoj adresi, Karcher mašinama i sredstvima bezbednim za decu i ljubimce.'],cene:['Cenovnik','Cene su početne. Tačnu cenu kažemo kad čujemo šta treba da se opere.'],'o-nama':['O nama','Fresh&Clean 021 iz Novog Sada. Profesionalno dubinsko pranje po pristupačnim cenama, za domove i poslovne prostore.'],uslovi:['Uslovi korišćenja','Važe od 1. oktobra 2026.'],privatnost:['Politika privatnosti','Važi od 1. oktobra 2026.'],kontakt:['Kontakt','Najbrže je telefonom. Nalazimo se u Ulici Branka Radičevića 1 u Novom Sadu, a dolazimo na vašu adresu.']};
+const glass=(tint)=>tint==='light'
+ ?'radial-gradient(circle at 30% 26%,rgba(255,255,255,0.95) 0 7%,rgba(255,255,255,0.35) 14%,rgba(150,205,245,0.18) 42%,rgba(170,200,250,0.22) 68%,rgba(130,205,245,0.35) 88%,rgba(255,255,255,0.7) 100%)'
+ :'radial-gradient(circle at 30% 26%,rgba(255,255,255,0.9) 0 6%,rgba(255,255,255,0.18) 13%,rgba(150,210,245,0.08) 45%,rgba(175,205,250,0.16) 72%,rgba(140,210,248,0.3) 90%,rgba(255,255,255,0.55) 100%)';
+function bubbles(set,tint){
+  return React.createElement('div',{style:{position:'absolute',inset:0,pointerEvents:'none',overflow:'hidden'}},
+    set.map((b,i)=>React.createElement('span',{key:i,style:{position:'absolute',left:b[0]+'%',top:b[1]+'%',width:b[2],height:b[2],borderRadius:'50%',background:glass(tint),border:tint==='light'?'1px solid rgba(60,150,210,0.18)':'1px solid rgba(255,255,255,0.45)',boxShadow:tint==='light'?'inset -6px -8px 18px rgba(60,150,210,0.12)':'inset -6px -10px 22px rgba(255,255,255,0.12)','--dx':b[4]+'px','--dy':(-b[4]*1.4)+'px','--dx':(b[4]*2)+'px','--dy':(-b[4]*2.8)+'px',animation:`sjFloat ${b[3]*0.45}s ease-in-out ${-i*0.7}s infinite`}})));
+}
+const HERO=[[58,12,180,11,18],[74,46,96,9,-14],[86,8,60,8,10],[66,70,40,7,12],[92,62,140,13,-20],[48,78,28,6,8],[80,28,22,7,-8],[40,8,54,10,14]];
+const SOFT=[[-4,60,220,14,16],[88,-10,160,12,-14],[30,82,60,9,10],[70,78,36,7,-8]];
+const CTA=[[62,-30,260,14,18],[84,40,120,10,-14],[46,60,50,8,10],[94,-6,40,7,-8]];
+const CALC=[[70,-14,180,13,14],[-10,70,140,11,-12]];
+class Component extends DCLogic {
+  state={w:typeof window!=='undefined'?window.innerWidth:1200,menu:false,page:'',type:'gar',m2:6,ex:{dsb:true},qty:{gar:1,dbr:1},faq:0,ba:50,baTab:'gar'};
+  hb=bubbles(HERO,'dark');sb=bubbles(SOFT,'light');cb=bubbles(CTA,'dark');kb=bubbles(CALC,'dark');fb=bubbles([[78,-20,240,14,16],[92,50,90,10,-12],[64,70,34,8,10]],'dark');
+  readHash=()=>{const p=(location.hash||'').replace(/^#\/?/,'');if(PAGES.some(x=>x[0]===p)||p==='uslovi'||p==='privatnost'){this.setState({page:p});window.scrollTo(0,0);}};
+  rise=(()=>{let seed=7;const r=()=>(seed=(seed*16807)%2147483647)/2147483647;
+    return Array.from({length:52},()=>{const big=r()<0.25;return{x:r()*100,size:big?120+r()*160:18+r()*80,d:r()*0.45,len:0.35+r()*0.3,ph:r()*6.28,sway:10+r()*30,ref:React.createRef()}});})();
+  riseEl=React.createElement('div',{style:{position:'fixed',inset:0,zIndex:25,pointerEvents:'none',overflow:'hidden'}},
+    this.rise.map((b,i)=>React.createElement('span',{key:i,ref:b.ref,style:{position:'absolute',left:b.x+'%',top:0,width:b.size,height:b.size,marginLeft:-b.size/2,borderRadius:'50%',opacity:0,willChange:'transform',
+      background:'radial-gradient(circle at 30% 26%,rgba(255,255,255,0.98) 0 7%,rgba(255,255,255,0.4) 14%,rgba(150,205,245,0.22) 42%,rgba(170,200,250,0.26) 68%,rgba(130,205,245,0.42) 88%,rgba(255,255,255,0.8) 100%)',
+      border:'1px solid rgba(60,150,210,0.22)',boxShadow:'inset -6px -10px 22px rgba(60,150,210,0.14),0 6px 24px -10px rgba(60,150,210,0.3)'}})));
+  tick=()=>{this.raf=0;const hero=document.querySelector('[data-screen-label="Početna hero"]');if(!hero)return;
+    const H=hero.offsetHeight,vh=window.innerHeight,p=Math.max(0,Math.min(1,(window.scrollY-H*0.15)/(H*0.95)));
+    for(const b of this.rise){const el=b.ref.current;if(!el)continue;const t=(p-b.d)/b.len;
+      if(t<=0||t>=1){el.style.opacity=0;continue;}
+      const y=(1-t)*(vh+b.size)+t*(-b.size*1.4),x=Math.sin(t*6.28+b.ph)*b.sway;
+      el.style.opacity=t<0.08?t/0.08:1;el.style.transform=`translate3d(${x}px,${y}px,0) scale(${0.85+t*0.25})`;}};
+  pickBa=(id)=>{if(id===this.state.baTab||this.state.burst)return;const k=Date.now();this.setState({burst:k});
+    clearTimeout(this.t1);clearTimeout(this.t2);
+    this.t1=setTimeout(()=>this.setState({baTab:id}),520);this.t2=setTimeout(()=>this.setState({burst:0}),1250);};
+  burstSet=(()=>{let seed=11;const r=()=>(seed=(seed*16807)%2147483647)/2147483647;
+    return Array.from({length:46},()=>{const sz=50+r()*200;return{x:r()*100,y:55+r()*55,sz,d:r()*0.28,sx:(r()-0.5)*60,ty:-(80+r()*220),sx2:(r()-0.5)*120,ty2:-(380+r()*320)}});})();
+  goPage=(p)=>{if(p===this.state.page){window.scrollTo({top:0,behavior:'smooth'});this.setState({menu:false});return;}
+    if(this.state.pageBurst)return;this.setState({pageBurst:Date.now(),menu:false});clearTimeout(this.t3);clearTimeout(this.t4);
+    this.t3=setTimeout(()=>{this.setState({page:p});window.scrollTo(0,0);try{history.replaceState(null,'','#/'+p);}catch(err){}},520);
+    this.t4=setTimeout(()=>this.setState({pageBurst:0}),1250);};
+  makeBurst=(k,fx)=>React.createElement('div',{key:k,style:{position:fx?'fixed':'absolute',inset:0,zIndex:fx?60:3,pointerEvents:'none',overflow:'hidden',transform:fx?'translateZ(0)':undefined}},
+    React.createElement('div',{style:{position:'absolute',inset:0,background:'radial-gradient(ellipse at 50% 70%,#ffffff 0%,#e3f3fc 55%,#c6e3f6 100%)',animation:'sjVeil 1.2s ease-in-out forwards'}}),
+    ...this.burstSet.map((b,i)=>React.createElement('span',{key:i,style:{position:'absolute',left:b.x+'%',top:b.y+'%',width:b.sz,height:b.sz,marginLeft:-b.sz/2,marginTop:-b.sz/2,borderRadius:'50%',opacity:0,
+      '--sx':b.sx+'px','--ty':b.ty+'px','--sx2':b.sx2+'px','--ty2':b.ty2+'px',
+      background:'radial-gradient(circle at 30% 26%,rgba(255,255,255,1) 0 7%,rgba(255,255,255,0.55) 14%,rgba(165,210,248,0.35) 42%,rgba(175,205,250,0.35) 68%,rgba(130,205,245,0.5) 88%,rgba(255,255,255,0.9) 100%)',
+      border:'1px solid rgba(60,150,210,0.25)',boxShadow:'inset -8px -12px 24px rgba(60,150,210,0.18)',
+      animation:`sjFoam 1.05s cubic-bezier(.3,.6,.4,1) ${b.d}s forwards`}})));
+  baRef=React.createRef();
+  baDown=(e)=>{e.preventDefault();const move=(ev)=>{const el=this.baRef.current;if(!el)return;const r=el.getBoundingClientRect();this.setState({ba:Math.max(0,Math.min(100,((ev.clientX-r.left)/r.width)*100))});};
+    const up=()=>{window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);};
+    window.addEventListener('pointermove',move);window.addEventListener('pointerup',up);move(e);};
+  onResize=()=>{this.setState({w:window.innerWidth});this.styleFab();};
+  styleFab=()=>{const f=this.fab;if(!f)return;const m=window.innerWidth<820,sz=m?58:64,off=m?18:24;
+    f.style.cssText='position:fixed;right:'+off+'px;bottom:'+off+'px;z-index:2147483000;width:'+sz+'px;height:'+sz+'px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#8ee8ad 0 10%,#1f9d55 70%);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1;text-decoration:none;font-family:system-ui,sans-serif;box-shadow:0 16px 36px -10px rgba(31,157,85,0.8),inset 0 0 0 2px rgba(255,255,255,0.35);transform:translateZ(0);will-change:transform;transition:transform .2s';};
+  mountFab=()=>{if(this.fab)return;const f=document.createElement('a');f.href='tel:+381628532126';f.setAttribute('aria-label','Pozovite 062 853 21 26');
+    f.innerHTML='<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="#fff" style="display:block"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>';
+    f.onmouseenter=()=>{f.style.transform='translateZ(0) scale(1.06)'};f.onmouseleave=()=>{f.style.transform='translateZ(0)'};this.fab=f;this.styleFab();document.body.appendChild(f);};
+  onScroll=()=>{if(!this.raf)this.raf=requestAnimationFrame(this.tick);};
+  onLink=(e)=>{const a=e.target&&e.target.closest?e.target.closest('a[href^="#/"]'):null;if(!a)return;
+    const p=a.getAttribute('href').replace(/^#\/?/,'');if(!(PAGES.some(x=>x[0]===p)||p==='uslovi'||p==='privatnost'))return;
+    e.preventDefault();e.stopPropagation();this.goPage(p);};
+  componentDidMount(){this.mountFab();window.addEventListener('click',this.onLink,true);this.readHash();window.addEventListener('hashchange',this.readHash);window.addEventListener('scroll',this.onScroll,{passive:true});window.addEventListener('resize',this.onScroll);window.addEventListener('resize',this.onResize);this.onScroll();}
+  componentWillUnmount(){if(this.fab){this.fab.remove();this.fab=null;}window.removeEventListener('resize',this.onResize);window.removeEventListener('click',this.onLink,true);window.removeEventListener('hashchange',this.readHash);window.removeEventListener('scroll',this.onScroll);window.removeEventListener('resize',this.onScroll);}
+  renderVals(){
+    const s=this.state,t=TYPES.find(x=>x.id===s.type);
+    const extra=EXTRAS.reduce((a,e)=>a+(s.ex[e.id]?e.p:0),0);
+    const q=s.qty||{};const items=PRICECALC.flatMap(g=>g.items);
+    const total=items.reduce((a,i)=>a+(q[i.id]||0)*i.p,0)+(s.m2>0?s.m2*400+500:0);
+    const setQ=(id,d)=>this.setState(p=>{const c=(p.qty||{})[id]||0;return{qty:{...(p.qty||{}),[id]:Math.max(0,Math.min(20,c+d))}}});
+    const ch=this.props.cta??'telefon';
+    const cta={telefon:['Pozovite nas','tel:+'+PHONE],whatsapp:['WhatsApp','https://wa.me/'+PHONE],viber:['Viber','viber://chat?number=%2B'+PHONE]}[ch]||['Pozovite','tel:+'+PHONE];
+    const page=s.page,inner=INNER[page]||['',''];
+    if(typeof document!=='undefined'&&PAGE_TITLES[page]&&document.title!==PAGE_TITLES[page])document.title=PAGE_TITLES[page];
+    const showBubbles=this.props.bubbles??true;
+    const faqs=[
+      ['Da li dolazite na adresu?','Dolazimo. Nameštaj, dušeke, auto enterijer i podove peremo kod vas, na licu mesta, u Novom Sadu.'],
+      ['Da li su sredstva bezbedna za decu i ljubimce?','Jesu. Koristimo eko sertifikovana sredstva proizvođača Karcher, ANNO i MAFRA.'],
+      ['Koliko košta pranje tepiha?','400 dinara po kvadratnom metru, a prevoz je 500 dinara.'],
+      ['Koje materijale perete?','Na nameštaju tkaninu, kožu i eko kožu. Tepihe peremo svih veličina i gustina, od prirodnih i sintetičkih vlakana.'],
+      ['Da li skidate sve fleke?','Sa tepiha uklanjamo 97% fleka, a one najtvrdokornije peremo ručno.']];
+    return {
+      isHome:page==='',pageBurstEl:s.pageBurst?this.makeBurst('pg'+s.pageBurst,true):null,hdrPad:s.w<820?'8px 8px 8px 18px':'10px 10px 10px 24px',hdrGap:s.w<820?'12px':'20px',hdrWrap:s.w<820?'nowrap':'wrap',menuExp:s.menu?'true':'false',fabOff:s.w<820?'18px':'24px',fabSize:s.w<820?'58px':'64px',brandPad:s.w<600?'32px 20px':'48px 40px',cardPad:s.w<600?'20px 22px':'26px 32px',formPad:s.w<600?'24px 20px':'36px',formOpen:!s.sent,formSent:!!s.sent,formErr:!!s.fErr,
+      fName:s.fName||'',fPhone:s.fPhone||'',fEmail:s.fEmail||'',fMsg:s.fMsg||'',
+      setName:e=>this.setState({fName:e.target.value,fErr:false}),setPhone:e=>this.setState({fPhone:e.target.value,fErr:false}),setEmail:e=>this.setState({fEmail:e.target.value}),setMsg:e=>this.setState({fMsg:e.target.value}),
+      formSvcs:['Nameštaj','Tepih','Dušek','Auto enterijer','Podovi','Kolica i stolice'].map(l=>{const on=!!(s.fSvc||{})[l];return{label:(on?'✓ ':'')+l,bg:on?'#c4e5f8':'#fff',bd:on?'#6fc0ee':'#bcdaee',toggle:()=>this.setState(p=>({fSvc:{...(p.fSvc||{}),[l]:!(p.fSvc||{})[l]}}))}}),
+      sendForm:()=>{if(s.sending)return;if(!(s.fName||'').trim()||!(s.fPhone||'').trim()){this.setState({fErr:true});return;}
+        const svc=Object.keys(s.fSvc||{}).filter(k=>s.fSvc[k]).join(', ')||'-';
+        this.setState({sending:true,fErr:false,fFail:false});
+        fetch(FORM_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Novi upit sa sajta: '+s.fName,_template:'table',_captcha:'false',Ime:s.fName,Telefon:s.fPhone,Email:s.fEmail||'-',Usluge:svc,Poruka:s.fMsg||'-'})})
+          .then(r=>r.ok?r.json():Promise.reject(r)).then(j=>{if(j&&String(j.success)==='false')throw j;this.setState({sent:true,sending:false});})
+          .catch(()=>this.setState({sending:false,fFail:true}));},
+      formFail:!!s.fFail,sendLabel:s.sending?'Šaljem…':'Pošalji upit',
+      resetForm:()=>this.setState({sent:false,fName:'',fPhone:'',fEmail:'',fMsg:'',fSvc:{}}),markH:s.w<600?'30px':'38px',logoFs:s.w<600?'13px':'17px',logoSubFs:s.w<600?'8px':'10px',isLegal:page==='uslovi'||page==='privatnost',legal:LEGAL[page]||[],mob:s.w<820,desk:s.w>=820,menuOpen:s.w<820&&s.menu,menuIcon:s.menu?'✕':'☰',toggleMenu:()=>this.setState(p=>({menu:!p.menu})),closeMenu:()=>this.setState({menu:false}),baPad:s.w<600?'28px 20px':'56px',heroPad:s.w<600?'130px 20px 178px':'160px 32px 72px',heroCardDisp:s.w<600?'none':'flex',heroImg:s.w<600?'assets/hero-fc-mob.jpg':'assets/hero-fc.jpg',heroImgPos:s.w<600?'center 30%':'70% center',
+      heroOv1:s.w<600?'linear-gradient(180deg,rgba(6,30,50,0.55) 0%,rgba(6,30,50,0.78) 35%,rgba(6,30,50,0.86) 70%,rgba(6,30,50,0.6) 100%)':'linear-gradient(100deg,rgba(6,30,50,0.92) 0%,rgba(16,70,110,0.72) 38%,rgba(60,150,210,0.30) 70%,rgba(60,150,210,0.10) 100%)',heroBtnTop:s.w<600?'110px':'0px',msgPad:s.w<600?'20px 18px':'24px 32px',msgFs:s.w<600?'17px':'22px',heroBtnDisplay:s.w<600?'grid':'flex',tabFlex:s.w<600?'1 1 0':'0 0 auto',tabPad:s.w<600?'10px 6px':'10px 18px',ctaBtnW:s.w<600?'100%':'auto',incDisplay:s.w<600?'grid':'flex',incFs:s.w<600?'13px':'14px',svcGap:s.w<600?'16px':'40px',svcPad:s.w<600?'8px':'14px',svcRad:s.w<600?'28px':'36px',svcInPad:s.w<600?'12px 10px 4px':'20px 24px',incPad:s.w<600?'6px 8px':'7px 12px',ctaPad:s.w<600?'44px 24px':'72px 56px',calcPad:s.w<600?'28px 20px':'40px',extraFs:s.w<600?'13px':'14px',isInner:page!=='',innerTitle:inner[0],innerLede:inner[1],
+      isServices:page==='usluge',isPrices:page==='cene',isAbout:page==='o-nama',isContact:page==='kontakt',
+      heroBubbles:showBubbles?this.hb:null,scrollBubbles:showBubbles&&page===''?this.riseEl:null,softBubbles:showBubbles?this.sb:null,ctaBubbles:showBubbles?this.cb:null,calcBubbles:showBubbles?this.kb:null,footBubbles:showBubbles?this.fb:null,
+      showCalc:this.props.showCalc??true,ctaLabel:cta[0],ctaHref:cta[1],
+      nav:PAGES.map(([id,l])=>({label:l,href:'#/'+id,color:id===page?'#1a6f9e':'#0d2f45',bg:id===page?'#e6f4fc':'transparent'})),
+      services:SERVICES.map((x,i)=>({...x,slot:'svc-'+x.id,slot2:'svc-big-'+x.id,order:(s.w<820||i%2)?1:0,img:SVCIMG[x.id]||'',bg:SVCIMG[x.id]?`url(${SVCIMG[x.id]})`:'none',noImg:!SVCIMG[x.id]})),
+      topServices:SERVICES.slice(0,3).map(x=>({...x,img:SVCIMG[x.id],bg:`url(${SVCIMG[x.id]})`})),
+      baTabs:BA.map(b=>{const on=b.id===s.baTab;return{label:b.label,bg:on?'#8fd0f5':'#fff',fg:on?'#06304a':'#0d2f45',pick:()=>this.pickBa(b.id)}}),
+      baRef:this.baRef,baBurst:s.burst?this.makeBurst(s.burst):null,baDown:this.baDown,baHasImg:!!BAIMG[s.baTab],baNoImg:!BAIMG[s.baTab],baBeforeImgBg:BAIMG[s.baTab]?`url(${BAIMG[s.baTab][0]})`:'none',baAfterImgBg:BAIMG[s.baTab]?`url(${BAIMG[s.baTab][1]})`:'none',baBefore:'ba-pre-'+s.baTab,baAfter:'ba-posle-'+s.baTab,baPos:s.ba,baClip:100-s.ba,setBa:e=>this.setState({ba:+e.target.value}),
+      steps:[{no:'1',title:'Pozovete ili pišete',desc:'Recite nam šta treba da operemo: garnituru, tepih, dušek ili auto. Ako niste sigurni, pošaljite par slika.'},{no:'2',title:'Dobijete cenu i termin',desc:'Cenu kažemo odmah u razgovoru, prema cenovniku.'},{no:'3',title:'Dolazimo na vašu adresu',desc:'Donosimo Karcher mašine i sredstva i peremo na licu mesta.'}],
+      stats:[{n:'2500+',l:'završenih čišćenja'},{n:'850+',l:'zadovoljnih mušterija'},{n:'97%',l:'fleka uklonimo sa tepiha'},{n:'3',l:'svetska proizvođača sredstava: Karcher, ANNO i MAFRA'}],
+      promises:[{t:'Bezbedno za decu i ljubimce',d:'Sva sredstva koja koristimo su eko sertifikovana.'},{t:'Karcher, ANNO, MAFRA',d:'Radimo samo sredstvima svetskih proizvođača i specijalizovanim mašinama.'},{t:'Tim hemijskih inženjera',d:'Za svaku površinu biramo najbolji tretman.'},{t:'Dolazimo na vašu adresu',d:'Radimo na terenu u Novom Sadu, za domove i poslovne prostore.'}],
+      priceRows:[
+        {name:'Fotelja',price:'od 1.000 din'},{name:'Dvosed',price:'od 2.000 din'},
+        {name:'Trosed',price:'od 2.500 din'},{name:'Garnitura',price:'od 3.500 din'},
+        {name:'Tepih (prevoz 500 din)',price:'400 din/m²'},{name:'Dušek obostrano',price:'od 800 din'},
+        {name:'Dušek bebi',price:'1.000 din'},{name:'Dušek singl',price:'1.500 din'},
+        {name:'Dušek bračni',price:'2.500 din'},{name:'Stolice',price:'500 din'},
+        {name:'Dečja kolica',price:'od 1.000 din'},{name:'Auto enterijer',price:'od 4.000 din'}],
+      m2:s.m2,setM2:e=>this.setState({m2:+e.target.value}),total:fmt(total),
+      calcGroups:PRICECALC.map(g=>({title:g.title,items:g.items.map(i=>({name:i.name,price:(i.od?'od ':'')+fmt(i.p)+' din / kom',qty:q[i.id]||0,qtyFg:(q[i.id]||0)>0?'#fff':'#9cc3dc',inc:()=>setQ(i.id,1),dec:()=>setQ(i.id,-1),incLabel:'Dodaj: '+i.name,decLabel:'Oduzmi: '+i.name}))})),
+      calcReset:()=>this.setState({qty:{},m2:0}),
+      types:TYPES.map(x=>{const on=x.id===s.type;return{name:x.name,bg:on?'#fff':'rgba(255,255,255,0.08)',fg:on?'#0d2f45':'#fff',select:()=>this.setState({type:x.id})}}),
+      extras:EXTRAS.map((e,i)=>{const on=!!s.ex[e.id];return{col:['1 / span 2','3 / span 2','5 / span 2','2 / span 2','4 / span 2'][i],label:(on?'✓ ':'+ ')+e.label,bg:on?'#a8dcf7':'transparent',fg:on?'#0d2f45':'#fff',toggle:()=>this.setState(p=>({ex:{...p.ex,[e.id]:!p.ex[e.id]}}))}}),
+      team:[{name:'Milica Jovanović',role:'Osnivač',bg:'url(assets/team-1.jpg)'},{name:'Nenad Ilić',role:'Vođa ekipa',bg:'url(assets/team-2.jpg)'},{name:'Sanja Petrović',role:'Kontrola kvaliteta',bg:'url(assets/team-3.jpg)'}],
+      faqs:faqs.map(([q,a],i)=>({q,a,open:s.faq===i,icon:s.faq===i?'−':'+',toggle:()=>this.setState(p=>({faq:p.faq===i?-1:i}))}))
+    };
+  }
+}
+</script>
+</body>
+</html>
