@@ -37,6 +37,22 @@ button,input{font-family:inherit}
 @keyframes sjFloat{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(var(--dx),var(--dy),0) scale(1.06)}100%{transform:translate3d(0,0,0) scale(1)}}
 @keyframes sjFoam{0%{transform:translate3d(0,40px,0) scale(.3);opacity:0}20%{opacity:1}50%{transform:translate3d(var(--sx),var(--ty),0) scale(1.1);opacity:1}100%{transform:translate3d(var(--sx2),var(--ty2),0) scale(1.25);opacity:0}}
 @keyframes sjVeil{0%{opacity:0}38%{opacity:.92}62%{opacity:.92}100%{opacity:0}}
+@media (max-width:599px){
+[style*="padding:110px 32px 0"]{padding:56px 16px 0!important}
+[style$="padding:110px 32px"]{padding:56px 16px!important}
+[style*="padding:80px 32px 0"]{padding:44px 16px 0!important}
+[style*="padding:170px 32px 80px"]{padding:116px 16px 44px!important}
+[style*="padding:40px 32px 0"]{padding:28px 16px 0!important}
+[style*="padding:24px 32px 32px"]{padding:20px 16px 24px!important}
+[style*="padding:12px 32px;"]{padding:4px 20px!important}
+[style*="padding:32px;"]{padding:24px!important}
+[style*="padding:28px;"]{padding:20px!important}
+[style*="padding:72px 24px 0"]{padding:44px 16px 0!important}
+header[style*="padding:0 20px"]{padding:0 12px!important}
+[style*="gap:44px"]{gap:28px!important}
+[style*="gap:48px 40px"]{gap:32px 24px!important}
+[style*="margin:40px auto 0"]{margin-top:28px!important}
+}
 @keyframes sjRise{0%{transform:translateY(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-110vh);opacity:0}}
 </style>
 </helmet>
@@ -63,7 +79,7 @@ button,input{font-family:inherit}
     </sc-if>
     <sc-if value="{{ mob }}" hint-placeholder-val="{{ false }}">
       <div style="display:flex;gap:8px;align-items:center">
-        <button type="button" onClick="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuExp }}" style="flex:none;width:46px;height:46px;border-radius:50%;border:0;background:#8fd0f5;color:#06304a;font-size:22px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center">{{ menuIcon }}</button>
+        <button type="button" onClick="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuExp }}" style="flex:none;width:46px;height:46px;padding:0;border-radius:50%;border:0;background:#8fd0f5;color:#06304a;cursor:pointer;display:flex;align-items:center;justify-content:center"><sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" style="display:block"><path d="M3 5.5h14M3 10h14M3 14.5h14" stroke="#06304a" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg></sc-if><sc-if value="{{ menuIsOpen }}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" style="display:block"><path d="M5 5l10 10M15 5L5 15" stroke="#06304a" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg></sc-if></button>
       </div>
     </sc-if>
   </div>
@@ -77,7 +93,7 @@ button,input{font-family:inherit}
 </header>
 
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
-  <section data-screen-label="Početna hero" style="position:relative;min-height:max(680px,100vh);display:flex;align-items:{{ heroAlign }};overflow:hidden;background:#0d2f45">
+  <section data-screen-label="Početna hero" style="position:relative;min-height:{{ heroMinH }};display:flex;align-items:{{ heroAlign }};overflow:hidden;background:#0d2f45">
     <picture><source media="(max-width: 599px)" sc-camel-src-set="assets/hero-fc-mob.jpg"><img src="assets/hero-fc.jpg" alt="Dubinsko pranje tepiha mašinom za ekstrakciju" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ heroImgPos }}"></picture>
     <div style="position:absolute;inset:0;background:{{ heroOv1 }}"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,30,50,0.55) 0%,transparent 40%)"></div>
@@ -88,8 +104,8 @@ button,input{font-family:inherit}
           <img src="assets/fc-mark-white2.png" alt="" style="height:20px;width:auto;margin-left:6px">
           Uklanjanje svih nečistoća.
         </span>
-        <h1 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:{{ h1Fs }};line-height:1.02;letter-spacing:-0.025em"><span style="white-space:nowrap">Dubinsko pranje</span><br><span style="white-space:nowrap">u <span style="color:#a8dcf7">Novom Sadu.</span></span></h1>
-        <p style="margin:0;font-size:19px;line-height:1.55;max-width:460px;color:#d8ecf8">Peremo nameštaj, tepihe, dušeke i auto enterijer, dolaskom na vašu adresu. Radimo Karcher mašinama i sredstvima bezbednim za decu i ljubimce.</p>
+        <h1 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:{{ h1Fs }};line-height:1.02;letter-spacing:-0.025em;text-shadow:{{ heroShadow }}"><span style="white-space:nowrap">Dubinsko pranje</span><br><span style="white-space:nowrap">u <span style="color:#a8dcf7">Novom Sadu.</span></span></h1>
+        <p style="margin:0;font-size:19px;line-height:1.55;max-width:460px;color:{{ heroPColor }};text-shadow:{{ heroShadow }}">Peremo nameštaj, tepihe, dušeke i auto enterijer, dolaskom na vašu adresu. Radimo Karcher mašinama i sredstvima bezbednim za decu i ljubimce.</p>
         <div style="display:{{ heroBtnDisplay }};grid-template-columns:1fr 1fr;flex-wrap:wrap;gap:10px;margin-top:{{ heroBtnTop }}">
           <a href="tel:+381628532126" style="grid-column:1 / -1;text-align:center;background:#fff;color:#0d2f45;padding:17px 30px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none" style-hover="background:#e6f4fc">Pozovite nas</a>
           <a href="https://wa.me/381628532126" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.45);color:#fff;padding:17px 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;backdrop-filter:blur(8px);text-align:center" style-hover="background:rgba(255,255,255,0.24)">WhatsApp</a>
@@ -591,8 +607,8 @@ class Component extends DCLogic {
           .then(r=>r.ok?r.json():Promise.reject(r)).then(j=>{if(j&&String(j.success)==='false')throw j;this.setState({sent:true,sending:false});})
           .catch(()=>this.setState({sending:false,fFail:true}));},
       formFail:!!s.fFail,formErrMsg:typeof s.fErr==='string'?s.fErr:'Unesite ime i ispravan broj telefona.',sendLabel:s.sending?'Šaljem…':'Pošalji upit',
-      resetForm:()=>this.setState({sent:false,fName:'',fPhone:'',fEmail:'',fMsg:'',fSvc:{},fHoney:'',fFail:false}),markH:s.w<600?'30px':'38px',logoFs:s.w<600?'13px':'17px',logoSubFs:s.w<600?'8px':'10px',isLegal:page==='uslovi'||page==='privatnost',legal:LEGAL[page]||[],mob:s.w<820,desk:s.w>=820,menuOpen:s.w<820&&s.menu,menuIcon:s.menu?'✕':'☰',toggleMenu:()=>this.setState(p=>({menu:!p.menu})),closeMenu:()=>this.setState({menu:false}),baPad:s.w<600?'28px 20px':'56px',heroPad:s.w<600?'130px 20px 288px':'160px 32px 72px',heroCols:s.w>=900?'minmax(0,1.85fr) minmax(0,1fr)':'repeat(auto-fit,minmax(min(100%,420px),1fr))',h1Fs:s.w>=600?'clamp(44px,6.6vw,92px)':'clamp(38px,6.6vw,92px)',heroCardDisp:s.w<600?'none':'flex',heroImg:s.w<600?'assets/hero-fc-mob.jpg':'assets/hero-fc.jpg',heroImgPos:s.w<600?'center 30%':'70% center',
-      heroOv1:s.w<600?'linear-gradient(180deg,rgba(6,30,50,0.55) 0%,rgba(6,30,50,0.78) 35%,rgba(6,30,50,0.86) 70%,rgba(6,30,50,0.6) 100%)':'linear-gradient(100deg,rgba(6,30,50,0.92) 0%,rgba(16,70,110,0.72) 38%,rgba(60,150,210,0.30) 70%,rgba(60,150,210,0.10) 100%)',heroBtnTop:s.w<600?'0px':'4px',heroAlign:s.w<600?'flex-end':'stretch',heroGridAlign:s.w<600?'end':'stretch',msgPad:s.w<600?'20px 18px':'24px 32px',msgFs:s.w<600?'17px':'22px',heroBtnDisplay:s.w<600?'grid':'flex',tabFlex:s.w<600?'1 1 0':'0 0 auto',tabPad:s.w<600?'10px 6px':'10px 18px',ctaBtnW:s.w<600?'100%':'auto',incDisplay:s.w<600?'grid':'flex',incFs:s.w<600?'13px':'14px',svcGap:s.w<600?'16px':'40px',svcPad:s.w<600?'8px':'14px',svcRad:s.w<600?'28px':'36px',svcInPad:s.w<600?'12px 10px 4px':'20px 24px',incPad:s.w<600?'6px 8px':'7px 12px',ctaPad:s.w<600?'44px 24px':'72px 56px',calcPad:s.w<600?'28px 20px':'40px',extraFs:s.w<600?'13px':'14px',isInner:page!=='',innerTitle:inner[0],innerLede:inner[1],
+      resetForm:()=>this.setState({sent:false,fName:'',fPhone:'',fEmail:'',fMsg:'',fSvc:{},fHoney:'',fFail:false}),markH:s.w<600?'30px':'38px',logoFs:s.w<600?'13px':'17px',logoSubFs:s.w<600?'8px':'10px',isLegal:page==='uslovi'||page==='privatnost',legal:LEGAL[page]||[],mob:s.w<820,desk:s.w>=820,menuOpen:s.w<820&&s.menu,menuIcon:s.menu?'✕':'☰',toggleMenu:()=>this.setState(p=>({menu:!p.menu})),closeMenu:()=>this.setState({menu:false}),baPad:s.w<600?'28px 20px':'56px',heroPad:s.w<600?'130px 20px 56px':'160px 32px 72px',heroCols:s.w>=900?'minmax(0,1.85fr) minmax(0,1fr)':'repeat(auto-fit,minmax(min(100%,420px),1fr))',h1Fs:s.w>=600?'clamp(44px,6.6vw,92px)':'clamp(38px,6.6vw,92px)',heroCardDisp:s.w<600?'none':'flex',heroImg:s.w<600?'assets/hero-fc-mob.jpg':'assets/hero-fc.jpg',heroImgPos:s.w<600?'center 30%':'70% center',
+      heroOv1:s.w<600?'linear-gradient(180deg,rgba(6,30,50,0.62) 0%,rgba(6,30,50,0.84) 30%,rgba(6,30,50,0.9) 75%,rgba(6,30,50,0.8) 100%)':'linear-gradient(100deg,rgba(6,30,50,0.92) 0%,rgba(16,70,110,0.72) 38%,rgba(60,150,210,0.30) 70%,rgba(60,150,210,0.10) 100%)',heroBtnTop:s.w<600?'0px':'4px',heroAlign:s.w<600?'flex-start':'stretch',heroMinH:s.w<600?'auto':'max(680px,100vh)',heroPColor:s.w<600?'#f1f8fd':'#d8ecf8',heroShadow:s.w<600?'0 2px 14px rgba(3,18,32,0.55)':'none',menuClosed:!s.menu,menuIsOpen:!!s.menu,heroGridAlign:s.w<600?'end':'stretch',msgPad:s.w<600?'20px 18px':'24px 32px',msgFs:s.w<600?'17px':'22px',heroBtnDisplay:s.w<600?'grid':'flex',tabFlex:s.w<600?'1 1 0':'0 0 auto',tabPad:s.w<600?'10px 6px':'10px 18px',ctaBtnW:s.w<600?'100%':'auto',incDisplay:s.w<600?'grid':'flex',incFs:s.w<600?'13px':'14px',svcGap:s.w<600?'16px':'40px',svcPad:s.w<600?'8px':'14px',svcRad:s.w<600?'28px':'36px',svcInPad:s.w<600?'12px 10px 4px':'20px 24px',incPad:s.w<600?'6px 8px':'7px 12px',ctaPad:s.w<600?'44px 24px':'72px 56px',calcPad:s.w<600?'28px 20px':'40px',extraFs:s.w<600?'13px':'14px',isInner:page!=='',innerTitle:inner[0],innerLede:inner[1],
       isServices:page==='usluge',isPrices:page==='cene',isAbout:page==='o-nama',isContact:page==='kontakt',
       heroBubbles:showBubbles?this.hb:null,scrollBubbles:showBubbles&&page===''?this.riseEl:null,softBubbles:showBubbles?this.sb:null,ctaBubbles:showBubbles?this.cb:null,calcBubbles:showBubbles?this.kb:null,footBubbles:showBubbles?this.fb:null,
       showCalc:this.props.showCalc??true,ctaLabel:cta[0],ctaHref:cta[1],
