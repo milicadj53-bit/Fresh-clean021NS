@@ -82,13 +82,13 @@ button,input{font-family:inherit}
     <div style="position:absolute;inset:0;background:{{ heroOv1 }}"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,30,50,0.55) 0%,transparent 40%)"></div>
     {{ heroBubbles }}
-    <div style="position:relative;max-width:1240px;width:100%;margin:0 auto;padding:{{ heroPad }};display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px;align-items:end">
+    <div style="position:relative;max-width:1240px;width:100%;margin:0 auto;padding:{{ heroPad }};display:grid;grid-template-columns:{{ heroCols }};gap:48px;align-items:end">
       <div style="display:flex;flex-direction:column;gap:28px;color:#fff">
         <span style="display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(10px);font-size:14px;font-weight:500;white-space:nowrap">
           <img src="assets/fc-mark-white2.png" alt="" style="height:20px;width:auto;margin-left:6px">
           Uklanjanje svih nečistoća.
         </span>
-        <h1 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(38px,6.6vw,92px);line-height:0.98;letter-spacing:-0.025em;text-wrap:balance">Dubinsko pranje<br>u <span style="color:#a8dcf7">Novom Sadu.</span></h1>
+        <h1 style="margin:0;font-family:'Open Sans',sans-serif;font-weight:600;font-size:{{ h1Fs }};line-height:1.02;letter-spacing:-0.025em"><span style="white-space:nowrap">Dubinsko pranje</span><br><span style="white-space:nowrap">u <span style="color:#a8dcf7">Novom Sadu.</span></span></h1>
         <p style="margin:0;font-size:19px;line-height:1.55;max-width:460px;color:#d8ecf8">Peremo nameštaj, tepihe, dušeke i auto enterijer, dolaskom na vašu adresu. Radimo Karcher mašinama i sredstvima bezbednim za decu i ljubimce.</p>
         <div style="display:{{ heroBtnDisplay }};grid-template-columns:1fr 1fr;flex-wrap:wrap;gap:10px;margin-top:{{ heroBtnTop }}">
           <a href="tel:+381628532126" style="grid-column:1 / -1;text-align:center;background:#fff;color:#0d2f45;padding:17px 30px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none" style-hover="background:#e6f4fc">Pozovite nas</a>
@@ -341,6 +341,7 @@ button,input{font-family:inherit}
           <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Ime i prezime<input type="text" name="ime" autocomplete="name" value="{{ fName }}" onInput="{{ setName }}" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400"></label>
           <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Broj telefona<input type="tel" name="telefon" autocomplete="tel" value="{{ fPhone }}" onInput="{{ setPhone }}" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400"></label>
         </div>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" value="{{ fHoney }}" onInput="{{ setHoney }}" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;opacity:0;pointer-events:none">
         <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Email (nije obavezno)<input type="email" name="email" autocomplete="email" value="{{ fEmail }}" onInput="{{ setEmail }}" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400"></label>
         <div style="display:flex;flex-direction:column;gap:8px">
           <span style="font-size:14px;font-weight:600">Šta treba oprati?</span>
@@ -352,7 +353,7 @@ button,input{font-family:inherit}
         </div>
         <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Poruka<textarea name="poruka" rows="4" value="{{ fMsg }}" onInput="{{ setMsg }}" placeholder="Npr. ugaona garnitura od tkanine i tepih oko 6 m²" style="padding:14px 16px;border-radius:14px;border:1px solid #bcdaee;background:#f5fafd;font-size:16px;color:#0d2f45;font-weight:400;font-family:inherit;resize:vertical"></textarea></label>
         <sc-if value="{{ formFail }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:14px;color:#a3321f;font-weight:600">Slanje nije uspelo. Pozovite nas na <a href="tel:+381628532126" style="color:#a3321f">062 853 21 26</a> ili pišite na fresh.clean021@gmail.com.</span></sc-if>
-        <sc-if value="{{ formErr }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:14px;color:#a3321f;font-weight:600">Unesite ime i broj telefona.</span></sc-if>
+        <sc-if value="{{ formErr }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:14px;color:#a3321f;font-weight:600">{{ formErrMsg }}</span></sc-if>
         <button type="button" onClick="{{ sendForm }}" style="padding:17px 28px;border-radius:999px;border:0;background:#8fd0f5;color:#06304a;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 10px 24px -10px rgba(60,150,210,0.7)" style-hover="background:#6fc0ee">{{ sendLabel }}</button>
       </sc-if>
       <sc-if value="{{ formSent }}" hint-placeholder-val="{{ false }}">
@@ -555,7 +556,7 @@ class Component extends DCLogic {
   onLink=(e)=>{const a=e.target&&e.target.closest?e.target.closest('a[href^="#/"]'):null;if(!a)return;
     const p=a.getAttribute('href').replace(/^#\/?/,'');if(!(PAGES.some(x=>x[0]===p)||p==='uslovi'||p==='privatnost'))return;
     e.preventDefault();e.stopPropagation();this.goPage(p);};
-  componentDidMount(){this.mountFab();window.addEventListener('click',this.onLink,true);this.readHash();window.addEventListener('hashchange',this.readHash);window.addEventListener('scroll',this.onScroll,{passive:true});window.addEventListener('resize',this.onScroll);window.addEventListener('resize',this.onResize);this.onScroll();}
+  componentDidMount(){this.t0=Date.now();this.mountFab();window.addEventListener('click',this.onLink,true);this.readHash();window.addEventListener('hashchange',this.readHash);window.addEventListener('scroll',this.onScroll,{passive:true});window.addEventListener('resize',this.onScroll);window.addEventListener('resize',this.onResize);this.onScroll();}
   componentWillUnmount(){if(this.fab){this.fab.remove();this.fab=null;}window.removeEventListener('resize',this.onResize);window.removeEventListener('click',this.onLink,true);window.removeEventListener('hashchange',this.readHash);window.removeEventListener('scroll',this.onScroll);window.removeEventListener('resize',this.onScroll);}
   renderVals(){
     const s=this.state,t=TYPES.find(x=>x.id===s.type);
@@ -577,16 +578,20 @@ class Component extends DCLogic {
     return {
       isHome:page==='',pageBurstEl:s.pageBurst?this.makeBurst('pg'+s.pageBurst,true):null,hdrPad:s.w<820?'8px 8px 8px 18px':'10px 10px 10px 24px',hdrGap:s.w<820?'12px':'20px',hdrWrap:s.w<820?'nowrap':'wrap',menuExp:s.menu?'true':'false',fabOff:s.w<820?'18px':'24px',fabSize:s.w<820?'58px':'64px',brandPad:s.w<600?'32px 20px':'48px 40px',cardPad:s.w<600?'20px 22px':'26px 32px',formPad:s.w<600?'24px 20px':'36px',formOpen:!s.sent,formSent:!!s.sent,formErr:!!s.fErr,
       fName:s.fName||'',fPhone:s.fPhone||'',fEmail:s.fEmail||'',fMsg:s.fMsg||'',
-      setName:e=>this.setState({fName:e.target.value,fErr:false}),setPhone:e=>this.setState({fPhone:e.target.value,fErr:false}),setEmail:e=>this.setState({fEmail:e.target.value}),setMsg:e=>this.setState({fMsg:e.target.value}),
+      setName:e=>this.setState({fName:e.target.value,fErr:false}),setPhone:e=>this.setState({fPhone:e.target.value,fErr:false}),setEmail:e=>this.setState({fEmail:e.target.value,fErr:false}),setMsg:e=>this.setState({fMsg:e.target.value}),
       formSvcs:['Nameštaj','Tepih','Dušek','Auto enterijer','Podovi','Kolica i stolice'].map(l=>{const on=!!(s.fSvc||{})[l];return{label:(on?'✓ ':'')+l,bg:on?'#c4e5f8':'#fff',bd:on?'#6fc0ee':'#bcdaee',toggle:()=>this.setState(p=>({fSvc:{...(p.fSvc||{}),[l]:!(p.fSvc||{})[l]}}))}}),
-      sendForm:()=>{if(s.sending)return;if(!(s.fName||'').trim()||!(s.fPhone||'').trim()){this.setState({fErr:true});return;}
+      fHoney:s.fHoney||'',setHoney:e=>this.setState({fHoney:e.target.value}),
+      sendForm:()=>{if(s.sending)return;const er=!(s.fName||'').trim()?'Unesite ime i prezime.':(s.fPhone||'').replace(/\D/g,'').length<8?'Unesite ispravan broj telefona (bar 8 cifara).':((s.fEmail||'').trim()&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.fEmail.trim()))?'Email adresa nije ispravna. Ispravite je ili ostavite polje prazno.':'';
+        if(er){this.setState({fErr:er});return;}
+        if(s.fHoney||Date.now()-(this.t0||0)<4000||Date.now()-(this.lastSend||0)<30000){this.setState({sent:true,fErr:false});return;}
+        this.lastSend=Date.now();
         const svc=Object.keys(s.fSvc||{}).filter(k=>s.fSvc[k]).join(', ')||'-';
         this.setState({sending:true,fErr:false,fFail:false});
-        fetch(FORM_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Novi upit sa sajta: '+s.fName,_template:'table',_captcha:'false',Ime:s.fName,Telefon:s.fPhone,Email:s.fEmail||'-',Usluge:svc,Poruka:s.fMsg||'-'})})
+        fetch(FORM_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Novi upit sa sajta: '+s.fName,_template:'table',_captcha:'false',_honey:s.fHoney||'',Ime:s.fName,Telefon:s.fPhone,Email:s.fEmail||'-',Usluge:svc,Poruka:s.fMsg||'-'})})
           .then(r=>r.ok?r.json():Promise.reject(r)).then(j=>{if(j&&String(j.success)==='false')throw j;this.setState({sent:true,sending:false});})
           .catch(()=>this.setState({sending:false,fFail:true}));},
-      formFail:!!s.fFail,sendLabel:s.sending?'Šaljem…':'Pošalji upit',
-      resetForm:()=>this.setState({sent:false,fName:'',fPhone:'',fEmail:'',fMsg:'',fSvc:{}}),markH:s.w<600?'30px':'38px',logoFs:s.w<600?'13px':'17px',logoSubFs:s.w<600?'8px':'10px',isLegal:page==='uslovi'||page==='privatnost',legal:LEGAL[page]||[],mob:s.w<820,desk:s.w>=820,menuOpen:s.w<820&&s.menu,menuIcon:s.menu?'✕':'☰',toggleMenu:()=>this.setState(p=>({menu:!p.menu})),closeMenu:()=>this.setState({menu:false}),baPad:s.w<600?'28px 20px':'56px',heroPad:s.w<600?'130px 20px 178px':'160px 32px 72px',heroCardDisp:s.w<600?'none':'flex',heroImg:s.w<600?'assets/hero-fc-mob.jpg':'assets/hero-fc.jpg',heroImgPos:s.w<600?'center 30%':'70% center',
+      formFail:!!s.fFail,formErrMsg:typeof s.fErr==='string'?s.fErr:'Unesite ime i ispravan broj telefona.',sendLabel:s.sending?'Šaljem…':'Pošalji upit',
+      resetForm:()=>this.setState({sent:false,fName:'',fPhone:'',fEmail:'',fMsg:'',fSvc:{},fHoney:'',fFail:false}),markH:s.w<600?'30px':'38px',logoFs:s.w<600?'13px':'17px',logoSubFs:s.w<600?'8px':'10px',isLegal:page==='uslovi'||page==='privatnost',legal:LEGAL[page]||[],mob:s.w<820,desk:s.w>=820,menuOpen:s.w<820&&s.menu,menuIcon:s.menu?'✕':'☰',toggleMenu:()=>this.setState(p=>({menu:!p.menu})),closeMenu:()=>this.setState({menu:false}),baPad:s.w<600?'28px 20px':'56px',heroPad:s.w<600?'130px 20px 178px':'160px 32px 72px',heroCols:s.w>=900?'minmax(0,1.7fr) minmax(0,1fr)':'repeat(auto-fit,minmax(min(100%,420px),1fr))',h1Fs:s.w>=600?'clamp(44px,5vw,78px)':'clamp(38px,6.6vw,92px)',heroCardDisp:s.w<600?'none':'flex',heroImg:s.w<600?'assets/hero-fc-mob.jpg':'assets/hero-fc.jpg',heroImgPos:s.w<600?'center 30%':'70% center',
       heroOv1:s.w<600?'linear-gradient(180deg,rgba(6,30,50,0.55) 0%,rgba(6,30,50,0.78) 35%,rgba(6,30,50,0.86) 70%,rgba(6,30,50,0.6) 100%)':'linear-gradient(100deg,rgba(6,30,50,0.92) 0%,rgba(16,70,110,0.72) 38%,rgba(60,150,210,0.30) 70%,rgba(60,150,210,0.10) 100%)',heroBtnTop:s.w<600?'110px':'0px',msgPad:s.w<600?'20px 18px':'24px 32px',msgFs:s.w<600?'17px':'22px',heroBtnDisplay:s.w<600?'grid':'flex',tabFlex:s.w<600?'1 1 0':'0 0 auto',tabPad:s.w<600?'10px 6px':'10px 18px',ctaBtnW:s.w<600?'100%':'auto',incDisplay:s.w<600?'grid':'flex',incFs:s.w<600?'13px':'14px',svcGap:s.w<600?'16px':'40px',svcPad:s.w<600?'8px':'14px',svcRad:s.w<600?'28px':'36px',svcInPad:s.w<600?'12px 10px 4px':'20px 24px',incPad:s.w<600?'6px 8px':'7px 12px',ctaPad:s.w<600?'44px 24px':'72px 56px',calcPad:s.w<600?'28px 20px':'40px',extraFs:s.w<600?'13px':'14px',isInner:page!=='',innerTitle:inner[0],innerLede:inner[1],
       isServices:page==='usluge',isPrices:page==='cene',isAbout:page==='o-nama',isContact:page==='kontakt',
       heroBubbles:showBubbles?this.hb:null,scrollBubbles:showBubbles&&page===''?this.riseEl:null,softBubbles:showBubbles?this.sb:null,ctaBubbles:showBubbles?this.cb:null,calcBubbles:showBubbles?this.kb:null,footBubbles:showBubbles?this.fb:null,
